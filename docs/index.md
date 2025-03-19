@@ -38,22 +38,20 @@
 # Análise de Requisitos Funcionais e Não-Funcionais
 *&lt;Descrição dos requisitos&gt;*
  * Funcionais:
-    - Sensoriamento de ambiente via LIDAR, câmeras e GPS
-
-         - pos(Detecção e evasão de ameaças em tempo real)
-    - Interface para gerenciamento de frota de drones
-
-         - pre(Controle remoto e automato de drones)
-    - Operação autonoma baseada em redes neurais
-
-         - pre(Controle remoto e automato de drones)    
-    - Mecanismo de fallback para evitar perda de conexão
-    - Autenticação de operadores via biometria e autenticação multifator
-
-         - pre(Banco de dados noSQL distribuido para dados em tempo real)
-    - Monitoramento de processos do SO embarcado para evitar falhas
-          
-
+   
+| ID | RF | Descrição |
+|---|---|---|
+| RF - 01 | Autenticação de Operadores | O sistema deve requisitar a autenticação via biometria e autenticação multifator(MFA)|
+| RF - 02 | Controle de Frotas | O sistema deve ser capaz de controlar as frotas de forma autônoma e remoto| 
+| RF - 03 | Interface de Comando e Controle | Interface gráfica com telemetria, status e capaz de receber comandos para os drones |
+| RF - 04 | Navegação Autônoma | Os drones devem ser capazes de realizar missões sem intervenção humana, utilizando os sensores como LIDAR, GPS e visão computacional |
+| RF - 05 | Comunicação Segura | A comunicação entre drones e entre drones e o sistema deve ser com criptografia ponta a ponta |
+| RF - 06 | Registro de Missões | O sistema deve armazenar dados de cada missão incluindo **LOGS** detalhados |
+| RF - 07 | Monitoramento em Tempo Real | Os drones devem enviar ao sistema dados de telemetria, status e eventos críticos continuamente ao sistema central |
+| RF - 08 | Gerenciamento de Atualizações | O sistema deve transmitir atualizações de firewall dos drones remotamente garantindo segurança e conformidade operacional  |
+| RF - 09 | Failober e Recuperação | Em caso de falhas o sistema deve redirecionar automaticamente as operações para um servidor de backup |
+| RF - 10 | Auditoria de eventos | Todos os acessos e comandos devem ser armazenados em **LOGS** de auditoria imutáveis para fins de segurança e conformidades |
+    
  * Não Funcionais:
     - Controle remoto e automato de drones
 
