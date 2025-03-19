@@ -39,20 +39,28 @@
 *&lt;Descrição dos requisitos&gt;*
  * Funcionais:
     - Sensoriamento de ambiente via LIDAR, câmeras e GPS
+        -pos(Detecção e evasão de ameaças em tempo real)
     - Interface para gerenciamento de frota de drones
-    - Operação autonoma baseada em redes neurais    
+          -pre(Controle remoto e automato de drones)
+    - Operação autonoma baseada em redes neurais
+          -pre(Controle remoto e automato de drones)    
     - Mecanismo de fallback para evitar perda de conexão
     - Autenticação de operadores via biometria e autenticação multifator
+          -pre(Banco de dados noSQL distribuido para dados em tempo real)
     - Monitoramento de processos do SO embarcado para evitar falhas
+          
 
  * Não Funcionais:
     - Controle remoto e automato de drones
+          -pre(Sensoriamento de ambiente via LIDAR, câmeras e GPS)
     - Dashboard em tempo real com telemetria
     - Protocos para comunicação segura e em tempo real com os drones
+           -pre(Criptografia de ponta e assinaturas digitais)
     - Criptografia de ponta e assinaturas digitais 
     - Banco de dados noSQL distribuido para dados em tempo real
     - Logs de missão realizadas e eventos críticos
     - Detecção e evasão de ameaças em tempo real
+          -pre(Sensoriamento de ambiente via LIDAR, câmeras e GPS)
 
 # Diagrama de Atividades
 
