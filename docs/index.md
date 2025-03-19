@@ -37,8 +37,9 @@
 
 # Análise de Requisitos Funcionais e Não-Funcionais
 *&lt;Descrição dos requisitos&gt;*
- * Funcionais:
    
+## Funcionais:
+ 
 |  ID | RF | Descrição |
 |---|---|---|
 | **RF - 01** | Autenticação de Operadores | O sistema deve requisitar a autenticação via biometria e autenticação multifator(MFA)|
@@ -51,8 +52,9 @@
 | **RF - 08** | Gerenciamento de Atualizações | O sistema deve transmitir atualizações de firewall dos drones remotamente garantindo segurança e conformidade operacional  |
 | **RF - 09** | Failober e Recuperação | Em caso de falhas o sistema deve redirecionar automaticamente as operações para um servidor de backup |
 | **RF - 10** | Auditoria de eventos | Todos os acessos e comandos devem ser armazenados em **LOGS** de auditoria imutáveis para fins de segurança e conformidades |
-    
- * Não Funcionais:
+
+
+## Não Funcionais:
 
 | ID | RNF | Descrição |
 |---|---|---|
