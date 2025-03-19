@@ -53,19 +53,20 @@
 | RF - 10 | Auditoria de eventos | Todos os acessos e comandos devem ser armazenados em **LOGS** de auditoria imutáveis para fins de segurança e conformidades |
     
  * Não Funcionais:
-    - Controle remoto e automato de drones
-
-         - pre(Sensoriamento de ambiente via LIDAR, câmeras e GPS)
-    - Dashboard em tempo real com telemetria
-    - Protocos para comunicação segura e em tempo real com os drones
-
-         - pre(Criptografia de ponta e assinaturas digitais)
-    - Criptografia de ponta e assinaturas digitais 
-    - Banco de dados noSQL distribuido para dados em tempo real
-    - Logs de missão realizadas e eventos críticos
-    - Detecção e evasão de ameaças em tempo real
-
-         - pre(Sensoriamento de ambiente via LIDAR, câmeras e GPS)
+| ID | RNF | Descrição |
+|---|---|---|
+| RNF - 01 | Segurança | O sistema deve implementar criptografia AES-256 para 
+armazenamento de dados e TLS para comunicação |
+| RNF - 02 | Desempenho | A latência da comunicação entre um drone e o sistema não pode ultrapassar 50ms em condições normais | 
+| RNF - 03 | Disponibilidade | O sistema deve estar disponível 24/7, com 99,9% de uptime, garantindo operação contínua em missões críticas |
+| RNF - 04 |  Escalabilidade | A arquitetura deve permitir a adição de novos drones e servidores sem comprometer a performance e segurança |
+| RNF - 05 | Armazenamento Distribuído | O banco de dados deve ser replicado geograficamente para garantir redundância e integridade dos dados |
+| RNF - 06 | Conformidade | O sistema deve atender a padrões de segurança como ISO 27001 e NIST 800-53 para segurança cibernética |
+| RNF - 07 | Resiliência | O sistema deve garantir recuperação automática de falhas em até 05 segundos sem perda de dados |
+| RNF - 08 | Tolerância a Falhas | A arquitetura deve suportar balanceamento de carga e replicação para evitar pontos únicos de falha |
+| RNF - 09 | Eficiência Energética | Os drones devem otimizar o consumo de bateria utilizando algoritmos de inteligência artificial para gestão de 
+energia |
+| RNF - 10 |  Log e Auditoria | Os logs devem ser armazenados por no mínimo 05 anos e protegidos contra alteração ou exclusão |
 
 # Diagrama de Atividades
 
