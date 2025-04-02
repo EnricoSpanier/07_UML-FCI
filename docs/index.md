@@ -71,11 +71,11 @@
 
 # Diagrama de Atividades
 
-*&lt;Diagrama para visualizer as pessoas das áreas de negócios e de desenvolvimento de uma organização para entender o processo e comportamento.&gt;*
+![Drones](https://github.com/user-attachments/assets/f3f30f15-5f23-4336-a02e-41587ab17c2f)
 
 # Diagrama de Casos de Uso
 
-*&lt;Diagrama para visualizar o comportamento dos atores&gt;*
+![CasosdeUso](https://github.com/user-attachments/assets/f8d16c8f-9793-48e0-b8a9-a1aac67ba923)
 
 # Descrição dos Casos de Uso
 
