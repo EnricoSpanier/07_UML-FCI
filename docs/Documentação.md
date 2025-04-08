@@ -79,25 +79,160 @@
 
 # Descrição dos Casos de Uso
 
-| ***Nome do Caso de Uso*** | Visualizar Log |
+| **Nome do Caso de Uso** | **Visualizar Log** |
 |---|---|
-| ***Ator Principal*** | Adiministrador |
-| ***Ator Secundário*** | |
+| ***Ator Principal*** | Administrador |
+| ***Ator Secundário*** | Banco de Dados |
 | ***Resumo*** | Esse caso de uso descreve as etapas percorridas para o acesso do log no sistema Falcão sombrio |
-| ***Pré-Condição*** | O administrador deve ter logado e autenticado seu acesso |
-| ***Pós-Condição*** | Cria um Log sobre a entrada e visualização do Log |
+| ***Pré-Condição*** | O usuário deve ter logado e autenticado seu acesso, alem de ter o nivel de acesso nescessário |
+| ***Pós Condição*** | Cria um Log sobre a entrada e visualização do Log |
 | **Fluxo Principal** | --- |
 | ***Ações do Ator*** | ***Ações do Sistema*** |
-| 1. Administrador entra no Falcão sombrio| 2. Sistema pede credenciais |
-| 3. Administrador insere as credenciais | 4. Sistema valida e pede autenticação biometrica e multifatorial |
-| 5. Administrador faz a biometria e insere o código multifatorial| 6. Sistema valida a biometria e código e exibe menu de opções|
-| 7. Administrador seleciona a opção de visualizar Logs | 8. Sistema verifica valida nivel de acesso e exibe todos os Logs |
-| 9. Administrador seleciona o Log desejado | 10. Sistema exibe todos os detalhes e dados do Log acessado |
-| 11. Administrador faz Logout ou volta ao menu de opções | 12. Sistema cria um log sobre o acesso e fecha ou reexibe o menu de opções|
+| 1. Usuário entra no Falcão sombrio|  |
+|  | 2. Sistema pede credenciais |
+| 3. Usuário insere as credenciais |  |
+|  | 4. Sistema valida e pede autenticação biométrica e multifatorial |
+| 5. Usuário faz a biometria e insere o código multifatorial |  | 
+|  | 6. Sistema valida a biometria e código e exibe menu de opções |
+| 7. Usuário seleciona a opção de visualizar Logs |  |
+|  |8. Sistema verifica valida nível de acesso e exibe todos os Logs |
+| 9. Usuário seleciona o Log desejado |  |
+|  | 10. Sistema exibe todos os detalhes e dados do Log acessado |
+| 11. Usuário faz Logout ou volta ao menu de opções |  |
+|  | 12. Sistema cria um log sobre o acesso e fecha ou reexibe o menu de opções|
 | **Fluxo Alternativo** | --- |
-| | |
+|  | 2. Sistema pede credenciais |
+| 3. Usuário insere as credenciais |  |
+|  | 4. Sistema não reconhece |
+| 5. Usuário reenvia credenciais |  |
+|  | 6. Sistema não reconhece e solicita que chame o suporte |
+|  | 7. Sistema cria um Log sobre a tentativa e fecha |
 | **Fluxo de Exceção** | --- |
-| | |
+| 1. Usuário tenta acessar Logs |  |
+|  | 2. Sistema confirma nível de acesso insuficiente e nega o acesso, informando o Usuário o motivo e gera um Log sobre a tentativa |
+|  | 3. Sistema se mantem no menu de opções|
+| **Restrições e Validações:** | 1. Usuário deve ter acesso ao Falcão Sombrio|
+| |2. Usuário deve ter ao menos nível de acesso de Administrador ou ser um membro/empresa com acesso para auditoria |
+
+
+| **Nome do Caso de Uso** | **Ver catalogo de drones** |
+|---|---|
+| ***Ator Principal*** | Usuario |
+| ***Ator Secundário*** | Banco de Dados |
+| ***Resumo*** | Esse caso de uso descreve as etapas percorridas para ver catalogo de drones podendo se conectar aos drones futuramente |
+| ***Pré-Condição*** | O usuario deve ter logado e autenticado seu acesso |
+| ***Pós Condição*** | Cria um log sobre a visualização e pode inicias o Conectar com drone(s) |
+| **Fluxo Principal** | --- |
+| ***Ações do Ator*** | ***Ações do Sistema*** |
+| 1. Usuário entra no Falcão sombrio |    |
+|  | 2. Sistema pede credenciais  |
+| 3. Usuário insere as credenciais |    |
+|  | 4. Sistema valida e pede autenticação biométrica e multifatorial |
+| 5. Usuário faz a biometria e insere o código multifatorial |  |
+|  | 6. Sistema valida a biometria e código e exibe menu de opções |
+| 7. Usuário seleciona a opção de ver catalogo de drones |  |
+|  | 8. Sistema verifica valida nível de acesso e exibe todos os drones |
+| 9. Usuário seleciona o drone ou conjunto de drones desejado(s)  |  |
+|  | 10.  Sistema exibe todos os detalhes e dados do(s) drone(s) acessado(s) |
+| 11. Usuário faz Logout ou volta ao menu de opções |   |
+|  | 12.  Sistema cria um log sobre o acesso e fecha ou reexibe o menu de opções |
+| **Fluxo Alternativo** | --- |
+| 11. Usuário se conecta com drone(s) selecionado(s) |   |
+|  | 12.  Sistema cria log e inicia o caso de Conectar com drone(s) |
+| **Fluxo de Exceção** | --- |
+| 1. | |
+|  | 2. |
+| **Restrições e Validações:** | 1. Usuário deve ter acesso ao Falcão Sombrio |
+|  | 2. Usuário deve ter nível de acesso operador ou superior |
+
+
+| **Nome do Caso de Uso** | **Criar/Atualizar Missões** |
+|---|---|
+| ***Ator Principal*** | Usuário |
+| ***Ator Secundário*** | Banco de Dados |
+| ***Resumo*** | Esse caso de uso descreve as etapas percorridas para atualiar ou criar novas missões |
+| ***Pré-Condição*** | Estar logado no sistema Falcão Sombrio |
+| ***Pós Condição*** | Criar Log de qualquer alteração  |
+| **Fluxo Principal** |  |
+| ***Ações do Ator*** | ***Ações do Sistema*** |
+| 1. Usuário entra no Falcão sombrio|  |
+|  | 2. Sistema pede credenciais |
+| 3. Usuário insere as credenciais |  |
+|  | 4. Sistema valida e pede autenticação biométrica e multifatorial |
+| 5. Usuário faz a biometria e insere o código multifatorial |  | 
+|  | 6. Sistema valida a biometria e código e exibe menu de opções |
+| 7. Usuário seleciona opção de criar/atualizar missão |
+|  | 8. Sistema Mostra a lista de missões e a opção de criar nova missão |
+| 9. Usuário seleciona criar nova |  |
+|  | 10. Sistema exibe a tela de criação de missão na qual irá solicitar as informações da missão |
+| 11. Usuário insere todas as informações nescessárias para a missão |  |
+|  | 12. Sistema atualiza a lista de missões e volta para a tela da lista das missões |
+| 13. Usuário faz Logout ou volta a tela de opções | |
+|  | 14. Sistema cria o Log e volta exibe tela de opções ou fecha |
+| **Fluxo Alternativo** | --- |
+| 9. Usuário escolhe uma missão para atualizar |  |
+|  | 10. Sistema exibe as informações sobre a missão selecionada e permite alterações  |
+| 11. Usuário altera informações desejadas e salva essas | |
+|  | 12. Sistema atualiza as informações e volta a lista de missões e cria um Log sobre as alterações |
+| **Fluxo de Exceção** | --- |
+| **Restrições e Validações:** | 1. Ter acesso ao sistema Falcão Sombrio  |
+|  | 2. Ter nível de acesso de operador ou superior |
+
+
+| **Nome do Caso de Uso** | **Executar missão** |
+|---|---|
+| ***Ator Principal*** | Drone |
+| ***Ator Secundário*** | Banco de dados |
+| ***Resumo*** | Esse caso de uso descreve as etapas percorridas para executar a(s) missão(ões) |
+| ***Pré-Condição*** | Ter uma missão |
+| ***Pós Condição*** | Cria um log sobre o percurso da(s) missão(ões) |
+| **Fluxo Principal** | --- |
+| ***Ações do Ator*** | ***Ações do Sistema*** |
+|  | 1. Sistema envia o percurso da missão |
+| 2. Drone envia os dados de sensores enquanto segue o percurso  |  |
+|  | 3.Sistema muda o percurso de acordo com a necessidade analizada nos dados  |
+| 4.Drone ao terminar o percuso retorna para a base |  |
+|  | 5. Sistema deixa o drone em estado de espera |
+|  | 4. Sistema cria um log sobre o percurso de ações tomas e fecha |
+| **Fluxo Alternativo** | --- |
+|  | 3. Sistema não recebe os dados e tenta reconexão |
+| 4. Drone executa o percurso previo até nova atualização |  |
+| **Fluxo de Exceção** | --- |
+| 1. | |
+| | 2. |
+| **Restrições e Validações:** | 1. Drone(s) disponivel(ies) |
+|  | 2.Ter missão valida | 
+|  | 3. Usuário ter nível de acesso de operador ou superior |
+
+
+| **Nome do Caso de Uso** | **Acessar Missões** |
+|---|---|
+| ***Ator Principal*** | Usuário |
+| ***Ator Secundário*** | Banco de Dados |
+| ***Resumo*** | Esse caso de uso descreve as etapas percorridas para acessar as missões salvas no sistema |
+| ***Pré-Condição*** | Estar logado no sistema e ter ao menos uma missão criada |
+| ***Pós Condição*** | Cria um Log sobre as ações tomadas |
+| **Fluxo Principal** | --- |
+| ***Ações do Ator*** | ***Ações do Sistema*** |
+| 1. Usuário entra no Falcão sombrio|  |
+|  | 2. Sistema pede credenciais |
+| 3. Usuário insere as credenciais |  |
+|  | 4. Sistema valida e pede autenticação biométrica e multifatorial |
+| 5. Usuário faz a biometria e insere o código multifatorial |  | 
+|  | 6. Sistema valida a biometria e código e exibe menu de opções |
+| 7. Usuário seleciona opção de acessar missão |  |
+|  | 8. Sistema exibe o catálogo de missões ao usuário |
+| 9. Usuário seleciona missão que deseja acessar |  |
+|  | 10. Sistema exibe as informações da missão selecionada |
+| 11. Usuário seleciona que quer iniciar ela |  |
+|  | 12. Sistema direciona o Usuário para a tela de executar missão |
+|  | 13. Sistema salva os Logs
+| **Fluxo Alternativo** | --- |
+| 11. Usuário seleciona que quer voltar ao menu principal | |
+|  | 12. Sistema Reexibe o menu principal  |
+| **Fluxo de Exceção** | --- |
+| **Restrições e Validações:** | 1. Usuário ter nível de acesso de operador ou superior |
+
 
 # Diagrama de Sequência
 
