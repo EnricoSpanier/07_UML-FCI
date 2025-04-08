@@ -79,20 +79,20 @@
 
 # Descrição dos Casos de Uso
 
-| ***Nome do Caso de Uso*** | Vizualizar Log |
+| ***Nome do Caso de Uso*** | Visualizar Log |
 |---|---|
 | ***Ator Principal*** | Adiministrador |
 | ***Ator Secundário*** | |
 | ***Resumo*** | Esse caso de uso descreve as etapas percorridas para o acesso do log no sistema Falcão sombrio |
 | ***Pré-Condição*** | O administrador deve ter logado e autenticado seu acesso |
-| ***Pós-Condição*** | Cria um Log osbre a entrada e vizualização do Log |
+| ***Pós-Condição*** | Cria um Log sobre a entrada e visualização do Log |
 | **Fluxo Principal** | --- |
 | ***Ações do Ator*** | ***Ações do Sistema*** |
 | 1. Administrador entra no Falcão sombrio| 2. Sistema pede credenciais |
 | 3. Administrador insere as credenciais | 4. Sistema valida e pede autenticação biometrica e multifatorial |
 | 5. Administrador faz a biometria e insere o código multifatorial| 6. Sistema valida a biometria e código e exibe menu de opções|
-| 7. Administrador seleciona a opção de vizualizar Logs | 8. Sistema verifica valida nivel de acesso e exibe todos os Logs |
-| 9. Administrador seleciona o Log desejado | 10. Sistema Exibe todos os detalhes e dados do Log acessado |
+| 7. Administrador seleciona a opção de visualizar Logs | 8. Sistema verifica valida nivel de acesso e exibe todos os Logs |
+| 9. Administrador seleciona o Log desejado | 10. Sistema exibe todos os detalhes e dados do Log acessado |
 | 11. Administrador faz Logout ou volta ao menu de opções | 12. Sistema cria um log sobre o acesso e fecha ou reexibe o menu de opções|
 | **Fluxo Alternativo** | --- |
 | | |
