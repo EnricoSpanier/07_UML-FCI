@@ -42,7 +42,7 @@
  
 |  ID | RF | Descrição |
 |---|---|---|
-| **RF - 01** | Autenticação de Operadores | O sistema deve requisitar a autenticação via biometria e autenticação multifator(MFA)|
+| **RF - 01** | Autenticação de Usuário | O sistema deve requisitar a autenticação via biometria e autenticação multifator(MFA)|
 | **RF - 02** | Controle de Frotas | O sistema deve ser capaz de controlar as frotas de forma autônoma e remoto| 
 | **RF - 03** | Interface de Comando e Controle | Interface gráfica com telemetria, status e capaz de receber comandos para os drones |
 | **RF - 04** | Navegação Autônoma | Os drones devem ser capazes de realizar missões sem intervenção humana, utilizando os sensores como LIDAR, GPS e visão computacional |
