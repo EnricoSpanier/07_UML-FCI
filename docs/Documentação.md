@@ -236,7 +236,12 @@
 
 # Diagrama de Sequência
 
-*&lt;Diagrama de ordem e interação dos objetos&gt;*
+## Acessar Missões
+![DiagramaDeSequencia(AcessarMissoes)](https://github.com/user-attachments/assets/e3ae1a65-cf58-43a9-8c42-dc3bb7b5e996)
+## Ver Catálogo de Drones
+![DiagramaDeSequencia(CatalogoDrones)](https://github.com/user-attachments/assets/236ff00c-0628-4d50-8459-c18f6b322497)
+
+
 
 # Diagrama de Classes
 
