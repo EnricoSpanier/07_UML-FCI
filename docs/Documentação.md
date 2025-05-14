@@ -197,9 +197,9 @@
 | **Fluxo Alternativo** | --- |
 |  | 3. Sistema não recebe os dados e tenta reconexão |
 | 4. Drone executa o percurso previo até nova atualização |  |
+|3. Envia dados informando sobre uma tentativa de abate| |
 | **Fluxo de Exceção** | --- |
-| 1. | |
-| | 2. |
+| | |
 | **Restrições e Validações:** | 1. Drone(s) disponivel(ies) |
 |  | 2.Ter missão valida | 
 |  | 3. Usuário ter nível de acesso de operador ou superior |
@@ -240,6 +240,8 @@
 ![DiagramaDeSequencia(AcessarMissoes)](https://github.com/user-attachments/assets/e3ae1a65-cf58-43a9-8c42-dc3bb7b5e996)
 ## Ver Catálogo de Drones
 ![DiagramaDeSequencia(CatalogoDrones)](https://github.com/user-attachments/assets/236ff00c-0628-4d50-8459-c18f6b322497)
+## Executar Missâo
+![DiagramaDeSequencia(ExecutarMissâo)](https://github.com/user-attachments/assets/0537508c-b4a6-44ea-8d08-dfc6ab6e85dd)
 
 
 
