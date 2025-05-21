@@ -247,7 +247,7 @@
 
 # Diagrama de Classes
 
-*&lt;Diagrama de relacionamento entre classes para os seus atributos e operações&gt;*
+![DiagramaDeClasse](https://github.com/user-attachments/assets/ca57ea3c-d021-48cf-9705-6b88b415f8ea)
 
 # Diagrama de Estados
 
