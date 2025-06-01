@@ -251,11 +251,11 @@
 
 # Diagrama de Estados
 
-*&lt;Diagrama para permite modelar o comportamento interno de um determinado objeto, subsistema ou sistema global&gt;*
+![Diagrama_Estados](https://github.com/user-attachments/assets/f0e590cc-b2be-4b56-9a33-89cb572aaae3)
 
 # Diagrama de Implantação
 
-*&lt;Diagrama para exibir o relacionamento de hardware e software no projeto&gt;*
+![Diagrama_Implantação](https://github.com/user-attachments/assets/cbec978e-5069-4eaa-9d54-165acb9576d0)
 
 # Referências
 
